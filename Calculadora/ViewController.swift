@@ -26,9 +26,12 @@ class ViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func numbers(_ sender: Any) {
-
         labelValue.text = labelValue.text! + String((sender as AnyObject).tag)
         numberOfScreen = Double(labelValue.text!)!
+    }
+    
+    @IBAction func allCancel(_ sender: Any) {
+        labelValue.text = "0"
     }
     
     // MARK: Methods
