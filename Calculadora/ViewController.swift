@@ -81,13 +81,13 @@ class ViewController: UIViewController {
             case 16:
                 switch operation {
                 case 12:
-                    labelValue.text = String(previousNumber / numberOnScreen)
+                    labelValue.text = String(format: "%.0f", previousNumber / numberOnScreen)
                 case 13:
-                    labelValue.text = String(previousNumber * numberOnScreen)
+                    labelValue.text = String(format: "%.0f", previousNumber * numberOnScreen)
                 case 14:
-                    labelValue.text = String(previousNumber - numberOnScreen)
+                    labelValue.text = String(format: "%.0f", previousNumber - numberOnScreen)
                 case 15:
-                    labelValue.text = String(previousNumber + numberOnScreen)
+                    labelValue.text = String(format: "%.0f", previousNumber + numberOnScreen)
                 default:
                     break
                 }
